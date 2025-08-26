@@ -1,0 +1,194 @@
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b1120; /* azul muy oscuro */
+      color: white;
+    }
+
+    header {
+      background-color: #111827; /* azul oscuro/negro */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #6366f1; /* indigo */
+    }
+    nav{
+        display: flex;
+        align-items: center;
+    }
+
+    nav a, p {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-size: 30px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav p:hover{
+        cursor: default;
+    }
+
+
+    nav a:hover {
+      color: #6366f1; /* indigo */
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #1e293b, #0b1120);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #f9fafb; /* blanco suave */
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      color: #cbd5e1; /* gris claro */
+    }
+
+    .btn {
+      background-color: #6366f1; /* indigo */
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #4f46e5; /* indigo más oscuro */
+      transform: translateY(-3px);
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      border-radius: 50px;
+    }
+    .hero img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .whatsapp-icon {
+      width: 88px;
+      height: 88px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .separator {
+      background-color: #f3f4f6;
+    }
+
+  .seguros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.seguro {
+  background: linear-gradient(145deg, #1e293b, #111827);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  color: #f3f4f6;
+  cursor: pointer;
+}
+
+.seguro:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  cursor: default;
+}
+
+.seguro img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.seguro:hover img {
+  transform: scale(1.05);
+}
+
+.seguro h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #f9fafb;
+}
+
+.seguro p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+.seguros h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 200px;
+  color: #f9fafb;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.seguro h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #38bdf8; /* azul claro que contrasta en fondo oscuro */
+  margin-bottom: 0.8rem;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.seguro h3::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 3px;
+  background: #38bdf8;
+  margin: 0.3rem auto 0;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.seguro:hover h3 {
+  color: #0ea5e9; /* tono más intenso al hover */
+}
+
+.seguro:hover h3::after {
+  width: 70%;
+}
+
