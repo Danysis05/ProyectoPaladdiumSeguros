@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/newLogo.png">
   <link rel="stylesheet" href="styles.css">
+
 
   <title>AseguraTuFuturo</title>
 </head>
@@ -11,48 +13,131 @@
   <a href=" ">
     <img class="whatsapp-icon" src="img/icons8-whatsapp-48.png" alt="WhatsApp">
   </a>
-  <header>
-    <img class="logo" src="img/logoRecord.png" alt="logo">
-    <nav>
-      <a href="#">Inicio</a>
-      <p>|</p>
-      <a href="#">Seguros</a>
-      <p>|</p>
-      <a href="#">Beneficios</a>
-      <p>|</p>
-      <a href="#">Contacto</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo-container">
+    <img class="logo" src="img/newLogo.png" alt="logo">
+    <h3>Palladium Seguros</h3>
+  </div>
+  <nav>
+    <a href="#">Seguros</a>
+    <a href="#">Beneficios</a>
+    <a href="#">Contacto</a>
+    <a href="#" class="btn-nav">Cotizar</a>
+  </nav>
+</header>
 
-  <section class="hero">
-    
+<section class="hero">
+  <div class="hero-img">
     <img src="img/familia.jpg" alt="Imagen de héroe">
-    <div>
-        <h2>Protege lo que más importa</h2>
-        <p>Encuentra el plan de seguros ideal para ti y tu familia, con la confianza y respaldo que necesitas.</p>
-        <button class="btn">Cotiza Ahora</button>
-    </div>
-  </section>
+  </div>
+  <div class="hero-text">
+    <h2>Protege lo que más importa</h2>
+    <p>Encuentra el plan de seguros ideal para ti y tu familia, con la confianza y respaldo que necesitas.</p>
+    <button class="btn">Cotiza Ahora</button>
+  </div>
+</section>
+
   <div class="separator"></div>
   
-<section class="seguros">
+  <section class="seguros">
   <h2>Seguros Disponibles</h2>
-  <div class="seguro">
+
+  <div class="seguro" data-id="vida">
     <img src="img/seguroVida.jpg" alt="Seguro de Vida">
     <h3>Seguro de Vida</h3>
     <p>Protege a tus seres queridos con un seguro de vida a su medida.</p>
   </div>
-  <div class="seguro">
+
+  <div class="seguro" data-id="salud">
     <img src="img/seguroSalud.jpg" alt="Seguro de Salud">
     <h3>Seguro de Salud</h3>
     <p>Acceso a la mejor atención médica con nuestros planes de salud.</p>
   </div>
-  <div class="seguro">
+
+  <div class="seguro" data-id="auto">
     <img src="img/seguroAuto.jpg" alt="Seguro de Auto">
     <h3>Seguro de Auto</h3>
     <p>Protege tu vehículo con una cobertura completa y confiable.</p>
   </div>
+
+  <div class="seguro" data-id="hogar">
+    <img src="img/seguroHogar.jpg" alt="Seguro de Hogar">
+    <h3>Seguro de Hogar</h3>
+    <p>Cuida tu hogar y todo lo que hay en él con nuestros seguros de hogar.</p>
+  </div>
+
+  <div class="seguro" data-id="pyme">
+    <img src="img/seguroPYME.jpg" alt="Seguro de PYME">
+    <h3>Seguro de PYME</h3>
+    <p>Protege tu negocio con nuestros seguros diseñados para PYMES.</p>
+  </div>
+
+  <div class="seguro" data-id="cumplimiento">
+    <img src="img/seguroCumplimiento.jpg" alt="Seguro de Cumplimiento">
+    <h3>Seguro de Cumplimiento</h3>
+    <p>Garantiza el cumplimiento de tus obligaciones con nuestros seguros especializados.</p>
+  </div> 
 </section>
 
+
+<div class="modal hidden" id="info-vida">
+  <div class="modal-content">
+    <h2>Seguro de Vida</h2>
+    <p>El seguro de vida es una herramienta financiera que proporciona protección económica a tus seres queridos...</p>
+    <img src="img/vidaInfo.jpg" alt="">
+    <button class="btn">Cotiza Ahora</button>
+    <a href="#" class="cerrar">Cerrar</a>
+  </div>
+</div>
+
+<div class="modal hidden" id="info-salud">
+  <div class="modal-content">
+    <h2>Seguro de Salud</h2>
+    <p>Accede a servicios médicos de calidad con coberturas amplias y flexibles.</p>
+    <img src="img/saludInfo.jpg" alt="">
+    <button class="btn">Cotiza Ahora</button>
+    <a href="#" class="cerrar">Cerrar</a>
+  </div>
+</div>
+
+<div class="modal hidden" id="info-auto">
+  <div class="modal-content">
+    <h2>Seguro de Auto</h2>
+    <p>Protege tu vehículo contra accidentes, robos y más.</p>
+    <img src="img/autoInfo.jpg" alt="">
+    <button class="btn">Cotiza Ahora</button>
+    <a href="#" class="cerrar">Cerrar</a>
+  </div>
+</div>
+<div class="modal hidden" id="info-hogar">
+  <div class="modal-content">
+    <h2>Seguro de Hogar</h2>
+    <p>Cubre daños a tu vivienda y pertenencias con nuestras opciones de seguro de hogar.</p>
+    <img src="img/hogarInfo.jpg" alt="">
+    <button class="btn">Cotiza Ahora</button>
+    <a href="#" class="cerrar">Cerrar</a>
+  </div>
+</div>
+<div class="modal hidden" id="info-pyme">
+  <div class="modal-content">
+    <h2>Seguro de PYME</h2>
+    <p>Protege tu negocio con seguros diseñados para pequeñas y medianas empresas.</p>
+    <img src="img/PYMEInfo.jpg" alt="">
+    <button class="btn">Cotiza Ahora</button>
+    <a href="#" class="cerrar">Cerrar</a>
+  </div>
+</div>
+<div class="modal hidden" id="info-cumplimiento">
+  <div class="modal-content">
+    <h2>Seguro de Cumplimiento</h2>
+    <p>Garantiza el cumplimiento de tus obligaciones contractuales con nuestros seguros especializados.</p>
+    <img src="img/cumplimientoInfo.jpg" alt="">
+    <button class="btn">Cotiza Ahora</button>
+    <a href="#" class="cerrar">Cerrar</a>
+  </div>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
